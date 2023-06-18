@@ -1,0 +1,2 @@
+rootProject.name = 'notification-system'
+include 'push-notification-gateway'
