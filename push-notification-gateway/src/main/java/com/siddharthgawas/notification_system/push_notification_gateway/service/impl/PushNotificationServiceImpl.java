@@ -109,6 +109,7 @@ public class PushNotificationServiceImpl implements PushNotificationService {
     @Override
     public void subscribeTopic(final String subscriptionId, final SubscriptionRequest request) {
         declareAndBindQueue(subscriptionId, notifyTopicSubscribers, request.topicName());
+        declareAndBindQueue(subscriptionId, notifyAll, "");
     }
 
     /**
