@@ -3,7 +3,7 @@ pipeline {
         docker {
             image 'gradle:7.6-jdk17-alpine'
             label 'docker'
-            args '-v $JENKINS_HOME/gradle-home:/home/gradle'
+            args '-v $WORKSPACE/gradle-home:/home/gradle'
         }
     }
 
